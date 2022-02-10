@@ -65,7 +65,9 @@ public class EmployeTest {
             "'T12345', 0, 1.0, 3, 3300.0", //(1000 * (3 + 0.3) + 0 * 100) * 1 = 3300
             ", 0, 1.0, 1, 1000.0", //(1000 + 0 * 100) * 1 = 1000
             "'T12345', 0, 1.0,, 1000.0", //(1000 + 0 * 100) * 1 = 1000   //ne rien mettre (apres les virgules) signifie null !il ne faut pas ecrire "null"
-
+            "'T12345', 1, 1.0, 1, 1100.0", //(1000 + 1 * 100) * 1 = 1100
+            "'T12345', 4, 1.0, 3, 3700.0", //(1000 * (3 + 0.3) + 4 * 100) * 1 = 3700
+            "'T12345', 0, 0.5, 1, 500.0", //(1000 + 0 * 100) * 0.5 = 500
             })
     //Paramètres : matricule, ancienneté, taux d'activité, performance, prime
     public void testGetPrimeAnnuelle(
